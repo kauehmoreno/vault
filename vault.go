@@ -79,9 +79,6 @@ func (v *Vault) Load() error {
 				data, dval string
 				err        error
 			)
-			for {
-
-			}
 			for key, val := range t {
 				data, err = v.encrypt(key)
 				if err != nil {
